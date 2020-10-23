@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="cn.chenjaly.java.web.test:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/cn_chenjaly_java_web_test_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="cn.chenjaly.java.web.test/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="cn.chenjaly.java.web.test" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
