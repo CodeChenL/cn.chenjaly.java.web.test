@@ -20,7 +20,7 @@
   <!-- Default panel contents -->
   <div class="panel-heading">图书管理页面</div>
   <div class="panel-body form-inline">
-    <form action="AddBookServlet">
+    <form action="AddBookServlet" method="post">
       <div class="form-group">
         <label>书名</label>
         <input type="text" class="form-control" name="name">
@@ -65,8 +65,8 @@
       <td>${book.author }</td>
       <td>${book.price }</td>
       <td>
-        <a href="#" class="btn btn-primary">修改</a>
-        <a href="#" class="btn btn-danger">删除</a>
+        <a href="GetBookByIdServlet?id=${book.id}" class="btn btn-primary">修改</a>
+        <a href="DeleteBookServlet?id=${book.id}" class="btn btn-danger">删除</a>
       </td>
     </tr>
   </c:forEach>

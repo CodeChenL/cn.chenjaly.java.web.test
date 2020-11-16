@@ -1,4 +1,4 @@
-package cn.chenjaly.web.test;
+package cn.chenjaly.web.util;
 
 import java.lang.reflect.Field;
 import java.sql.Connection;
@@ -55,7 +55,7 @@ public class DBUtil<T> {
 			//获取到rs中的整个结构
 			ResultSetMetaData rmd = rs.getMetaData();
 			//从表结构中获取到表明,来拼接出类名
-			String str = "cn.chenjaly.web.test."+rmd.getTableName(1).substring(0, 1).toUpperCase()+rmd.getTableName(1).substring(1);
+			String str = "cn.chenjaly.web.bean."+rmd.getTableName(1).substring(0, 1).toUpperCase()+rmd.getTableName(1).substring(1);
 			//加载类名成为一个类
 			Class clazz = Class.forName(str);
 			int count = rmd.getColumnCount();  //获取到属性的个数

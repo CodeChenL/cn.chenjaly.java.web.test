@@ -1,4 +1,7 @@
-package cn.chenjaly.web.test;
+package cn.chenjaly.web.servlet;
+import cn.chenjaly.web.bean.Book;
+import cn.chenjaly.web.util.DBUtil;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.WebServlet;
@@ -6,7 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet("/book")
+@WebServlet("/BookListServlet")
 public class BookListServlet extends HttpServlet{
     private static final long  serialVersionUID = 1L;
     public BookListServlet() {

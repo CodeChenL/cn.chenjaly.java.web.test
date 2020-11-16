@@ -1,10 +1,10 @@
-package cn.chenjaly.web.test;
+package cn.chenjaly.web.bean;
 
 public class Book {
     private int id;
     private String name;
     private String author;
-    private int price;
+    private double price;
 
     public Book() {
 
@@ -35,7 +35,7 @@ public class Book {
     public void setAuthor(String author) {
         this.author = author;
     }
-    public int getPrice() {
+    public double getPrice() {
         return price;
     }
     public void setPrice(int price) {

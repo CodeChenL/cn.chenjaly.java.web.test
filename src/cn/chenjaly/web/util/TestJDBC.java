@@ -1,8 +1,9 @@
-package cn.chenjaly.web.test;
+package cn.chenjaly.web.util;
 
 import java.util.List;
 
-import cn.chenjaly.web.test.*;
+import cn.chenjaly.web.bean.Book;
+import cn.chenjaly.web.util.DBUtil;
 
 public class TestJDBC {
     public static void main(String[] args) {
